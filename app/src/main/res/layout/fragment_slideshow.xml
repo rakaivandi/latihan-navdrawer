@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.slideshow.SlideshowFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnTop1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button 1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 2"
+            android:id="@+id/btnTop2"
+            android:layout_weight="1"
+            android:layout_toRightOf="@id/btnTop1"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 3"
+            android:layout_weight="1"
+            android:id="@+id/btnTop3"
+            android:layout_toRightOf="@id/btnTop2"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Isi Data Diri"
+            android:gravity="center"
+            android:textSize="35dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama : "
+            android:id="@+id/insertNama"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alamat : "
+            android:id="@+id/insertAlamat"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email : "
+            android:id="@+id/insertEmail"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan"
+            android:id="@+id/btnSimpan"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Batal"
+            android:id="@+id/btnBatal"
+            />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="35dp"
+        >
+
+        <TableRow
+            android:gravity="center">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button 4"
+                android:id="@+id/btnMid4"
+                android:layout_marginHorizontal="3dp"
+                android:paddingVertical="30dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button 5"
+                android:id="@+id/btnMid5"
+                android:paddingVertical="30dp"
+                android:layout_marginHorizontal="3dp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center">
+            <Button
+                android:layout_marginHorizontal="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button 6"
+                android:id="@+id/btnMid6"
+                android:paddingVertical="30dp"
+                />
+
+            <Button
+                android:layout_marginHorizontal="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button 7"
+                android:id="@+id/btnMid7"
+                android:paddingVertical="30dp"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 8"
+            android:id="@+id/btnBot8"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 9"
+            android:id="@+id/btnBot9"
+            android:layout_toRightOf="@id/btnBot8"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 10"
+            android:id="@+id/btnBot10"
+            android:layout_toRightOf="@id/btnBot9"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
